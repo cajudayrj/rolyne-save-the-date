@@ -20,6 +20,9 @@
 }
 
 @theme {
+  --color-primary: #484f20;
+  --color-secondary: #cea342;
+
   --animate-gradient: gradient 8s linear infinite;
   @keyframes gradient {
     0% { background-position: 0% 50% }
@@ -39,6 +42,6 @@ html {
   overflow: hidden;
 }
 
-.stf__block, .stf__wrapper {
-  overflow: auto;
+.stf__block {
+  overflow: hidden;
 }
