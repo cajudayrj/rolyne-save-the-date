@@ -1,7 +1,7 @@
 "use client";
 import BGMusic from "@/components/BGMusic/BGMusic";
-import Galaxy from "@/components/Galaxy/Galaxy";
 import dynamic from "next/dynamic";
+import { useEffect } from "react";
 
 const Inv = dynamic(
   () => import('@/components/Invitation/Invitation'),
@@ -14,14 +14,7 @@ export default function Home() {
       <main className="w-full flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <div className="w-full mx-auto h-screen flex flex-col justify-center items-center">
           <div className="absolute w-full h-full">
-            <Galaxy 
-              mouseRepulsion={true}
-              mouseInteraction={false}
-              density={1.5}
-              glowIntensity={0.3}
-              saturation={1}
-              hueShift={0}
-            />
+            <video src="./vidbg.mp4" autoPlay muted loop className="w-full h-full object-center object-cover"></video>
           </div>
           <Inv />
           <BGMusic />

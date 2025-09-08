@@ -9,39 +9,43 @@ const FadeContent = ({
   delay = 0,
   threshold = 0.1,
   initialOpacity = 0,
-  className = ''
+  className = '',
+  startOnVisible = true,
+  initialYPosition = 0,
 }) => {
-  const [inView, setInView] = useState(false);
+  const [isVisible, setIsVisible] = useState(!startOnVisible);
+
   const ref = useRef(null);
 
   useEffect(() => {
-    if (!ref.current) return;
+    if (!startOnVisible || !ref.current) return;
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          observer.unobserve(ref.current);
-          setTimeout(() => {
-            setInView(true);
-          }, delay);
-        }
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              setIsVisible(true);
+            }, delay);
+          }
+        });
       },
       { threshold }
     );
 
     observer.observe(ref.current);
-
     return () => observer.disconnect();
-  }, [threshold, delay]);
+  }, [startOnVisible]);
 
   return (
     <div
       ref={ref}
       className={className}
       style={{
-        opacity: inView ? 1 : initialOpacity,
-        transition: `opacity ${duration}ms ${easing}, filter ${duration}ms ${easing}`,
-        filter: blur ? (inView ? 'blur(0px)' : 'blur(10px)') : 'none'
+        transform: `translateY(${isVisible ? 0 : initialYPosition}px)`,
+        opacity: isVisible ? 1 : initialOpacity,
+        transition: `all ${duration}ms ${easing}`,
+        filter: blur ? (isVisible ? 'blur(0px)' : 'blur(10px)') : 'none'
       }}
     >
       {children}

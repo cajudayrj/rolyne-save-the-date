@@ -1,4 +1,4 @@
-import { Great_Vibes, Montserrat, Poppins, Fleur_De_Leah } from "next/font/google";
+import { Great_Vibes, UnifrakturMaguntia, Montserrat, Poppins, Fleur_De_Leah, Updock } from "next/font/google";
 
 const greatVibes = Great_Vibes({
   variable: "--font-great-vibes",
@@ -18,4 +18,21 @@ const fleur = Fleur_De_Leah({
     weight: "400"
 })
 
-export { greatVibes, fleur, poppins };
+const unifraktur = UnifrakturMaguntia({
+  variable: "--font-unifraktur",
+  subsets: ["latin"],
+  weight: "400"
+})
+
+const updock = Updock({
+  variable: "--font-updock",
+  subsets: ["latin"],
+  weight: "400"
+})
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+});
+
+export { greatVibes, fleur, unifraktur, montserrat, updock, poppins };

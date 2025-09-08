@@ -34,3 +34,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
 }
+
+html {
+  overflow: hidden;
+}
+
+.stf__block, .stf__wrapper {
+  overflow: auto;
+}

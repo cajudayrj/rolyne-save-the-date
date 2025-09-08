@@ -24,7 +24,7 @@ const BGMusic = () => {
                 <source src="./bgmusic.mp3" type="audio/mpeg" />
             </audio>
             <button onClick={handlePlay} className="flex gap-2 items-center justify-center text-black cursor-pointer hover:bg-amber-100 bg-white px-4 py-2 rounded-full">
-                <GiMusicalNotes /> {playing ? 'Pause' : 'Play'} Music
+               Now, let the music unfold
             </button>
         </div>
     )
