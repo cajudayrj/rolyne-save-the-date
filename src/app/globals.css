@@ -20,7 +20,8 @@
 }
 
 @theme {
-  --color-primary: #484f20;
+  --color-primary: #ad8d29;
+  /* --color-primary: #484f20; */
   --color-secondary: #cea342;
 
   --animate-gradient: gradient 8s linear infinite;

@@ -10,7 +10,7 @@ import bookpage from "@/assets/bookpage.jpeg";
 // import venue from "@/assets/venue.jpg";
 import venue from "@/assets/venue2.png";
 import std from "@/assets/datesavethedate.png";
-import { greatVibes, merriweather } from "@/utils/fonts";
+import { cinzel, greatVibes, magnificChaos, mathilda, merriweather, mutiara } from "@/utils/fonts";
 import clsx from "clsx";
 import TextType from "../TextType/TextType";
 
@@ -80,7 +80,7 @@ const Invitation = () => {
                         </div>
                         <div className="relative w-full h-full flex items-center mx-auto max-w-[200px] justify-center">
                             <FadeContent startOnVisible={true} delay={700}>
-                                <p className={clsx(greatVibes.className, "text-5xl text-center text-primary")}>You're Invited</p>
+                                <p className={clsx(magnificChaos.className, "text-5xl text-shadow-[0px_1px_black] text-center text-primary")}>You're Invited</p>
                             </FadeContent>
                         </div>
                     </div>
@@ -96,19 +96,20 @@ const Invitation = () => {
                                 text={["Save the Date"]}
                                 showCursor={false}
                                 startOnVisible={true}
-                                textColors={["#484f20"]}
+                                textColors={["#ad8d29"]}
+                                // textColors={["#ad8d29"]}
                                 initialDelay={400}
                                 typingSpeed={50}
-                                className={clsx(greatVibes.className, "text-4xl ")}
+                                className={clsx(magnificChaos.className, "text-4xl text-shadow-[0px_1px_black]")}
                             />
                             <TextType
                                 text={["for the Wedding of"]}
                                 showCursor={false}
                                 startOnVisible={true}
-                                textColors={["#484f20"]}
+                                textColors={["#ad8d29"]}
                                 initialDelay={1400}
                                 typingSpeed={50}
-                                className={clsx(greatVibes.className, "text-lg ")}
+                                className={clsx(cinzel.className, "text-xs text-shadow-[0px_1px_black]")}
                             />
                             <FadeContent startOnVisible={true} delay={3200} initialYPosition={20} className="w-full">
                                 <div className="flex gap-2 max-w-[calc(100%-60px)] mx-auto mt-4 items-center justify-center">
@@ -128,10 +129,10 @@ const Invitation = () => {
                                 text={["  Rolyne & Michael  "]}
                                 showCursor={false}
                                 startOnVisible={true}
-                                textColors={["#484f20"]}
+                                textColors={["#ad8d29"]}
                                 initialDelay={3400}
                                 typingSpeed={50}
-                                className={clsx(merriweather.className, "text-[14px] leading-[20px] mt-4 mb-0 uppercase border-t border-b border-[#484f20] tracking")}
+                                className={clsx(mutiara.className, "text-2xl leading-[20px] mt-4 mb-0 text-shadow-[0px_0px_black]")}
                             />
                             <FadeContent delay={5000} initialOpacity={0}>
                                 <div className="mx-auto w-full max-w-[240px] mt-4">
@@ -142,10 +143,10 @@ const Invitation = () => {
                                 text={["formal invitation to follow"]}
                                 showCursor={false}
                                 startOnVisible={true}
-                                textColors={["#484f20"]}
+                                textColors={["#ad8d29"]}
                                 initialDelay={5400}
                                 typingSpeed={30}
-                                className={clsx(greatVibes.className, "text-base text-primary mt-4")}
+                                className={clsx(mathilda.className, "text-4xl tracking-tighter text-primary text-shadow-[0px_0px_black] mt-4")}
                             />
                         </div>
                     </div>
@@ -157,10 +158,10 @@ const Invitation = () => {
                             <img src={bookpage.src} className="w-full h-full opacity-20" />
                         </div>
                         <FadeContent initialOpacity={0} delay={300}>
-                            <p className={`${greatVibes.className} text-4xl text-primary text-center mt-24`}>The Venue</p>
+                            <p className={`${magnificChaos.className} text-4xl text-primary text-center mt-24 text-shadow-[0px_1px_black]`}>The Venue</p>
                         </FadeContent>
                         <FadeContent initialOpacity={0} delay={800} initialYPosition={20}>
-                            <div className="flex flex-col gap-4 max-w-[600px] px-10 pt-4 pb-4 mx-auto">
+                            <div className="flex flex-col gap-4 max-w-[600px] px-10 pt-4 pb-2 mx-auto">
                                 <img src={venue.src} className="w-full" />
                             </div>
                         </FadeContent>
@@ -169,15 +170,15 @@ const Invitation = () => {
                                 text={["Blue Moon Los Ilustrados"]}
                                 showCursor={false}
                                 startOnVisible={true}
-                                textColors={["#484f20"]}
+                                textColors={["#ad8d29"]}
                                 initialDelay={1000}
                                 typingSpeed={50}
-                                className={clsx(merriweather.className, "text-lg text-primary text-center")}
+                                className={clsx(mutiara.className, "text-[22px] text-primary text-center text-shadow-[0px_0px_black]")}
                             />
                             <FadeContent initialOpacity={0} delay={3000} initialYPosition={20}>
-                                <p className={clsx(merriweather.className, 'text-[10px] text-primary text-center')}>Santa Rosa - Tagaytay Road</p>
-                                <p className={clsx(merriweather.className, 'text-[10px] text-primary text-center')}>Silang Cavite 4118</p>
-                                <p className={clsx(merriweather.className, 'text-[10px] text-primary text-center')}>Philippines</p>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>Santa Rosa - Tagaytay Road</p>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>Silang Cavite 4118</p>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>Philippines</p>
                             </FadeContent>
                         </div>
                     </div>
@@ -189,7 +190,7 @@ const Invitation = () => {
                         <img src={corner.src} className="w-[100px] rotate-180 absolute bottom-1 right-1" />
                         <img src={wax.src} className="w-[50px] absolute -translate-x-1/2 left-1/2 top-4" />
                         <div className="relative w-full h-full flex flex-col items-center max-w-[200px] mx-auto justify-center">
-                            <p className={`${greatVibes.className} text-center text-primary text-5xl lg:text-7xl`}>RSVP Form here</p>
+                            <p className={`${magnificChaos.className} text-center text-primary text-5xl lg:text-5xl text-shadow-[0px_1px_black]`}>RSVP Form here</p>
                         </div>
                     </div>
                 </HTMLFlipBook>
