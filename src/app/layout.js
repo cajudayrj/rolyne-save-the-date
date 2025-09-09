@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Rolyne Invite",
-  description: "Invite made by J Wedding Invites",
+  title: "Patron Kitley Nuptials",
+  description: "Made with ❤️ by J Wedding Invites",
 };
 
 export default function RootLayout({ children }) {
