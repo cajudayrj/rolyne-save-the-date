@@ -183,6 +183,56 @@ const Invitation = () => {
                         </div>
                     </div>
                     <div className="bg-white w-full h-full">
+                        <img src={corner.src} className="w-[100px] absolute top-1 left-1" />
+                        <img src={corner.src} className="w-[100px] rotate-180 absolute bottom-1 right-1" />
+                        <img src={wax.src} className="w-[50px] absolute -translate-x-1/2 left-1/2 top-4" />
+                        <div className="absolute w-full h-full">
+                            <img src={bookpage.src} className="w-full h-full opacity-20" />
+                        </div>
+                        <FadeContent initialOpacity={0} delay={300}>
+                            <p className={`${magnificChaos.className} text-4xl text-primary text-center mt-24 text-shadow-[0px_1px_black]`}>With Love</p>
+                        </FadeContent>
+
+                        <div className="flex flex-col max-w-[300px] mx-auto mt-6">
+                            <FadeContent initialOpacity={0} delay={1000} initialYPosition={20}>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>A little note from us to you</p>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>Our special day is coming through.</p>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>On 6th December 2026, we’ll say “I do,”</p>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>And we can’t wait to celebrate with you!</p>
+                            </FadeContent>
+                        </div>
+
+                        <div className="flex flex-col max-w-[300px] mx-auto mt-4">
+                            <FadeContent initialOpacity={0} delay={2500} initialYPosition={20}>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>We’d love for you to share this time,</p>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>To laugh, to dance, to toast, to dine.</p>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>Though travel and stay we can’t provide,</p>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>We hope you’ll stand with us, by our side.</p>
+                            </FadeContent>
+                        </div>
+
+                        <div className="flex flex-col max-w-[300px] mx-auto mt-4">
+                            <FadeContent initialOpacity={0} delay={4000} initialYPosition={20}>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>A formal invite shall soon appear,</p>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>With all the details, full and clear.</p>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>But for today, we gently say -</p>
+                                <p className={clsx(cinzel.className, 'text-[10px] text-primary text-center text-shadow-[0px_0px_black]')}>Kindly save our wedding day.</p>
+                            </FadeContent>
+                        </div>
+
+                        <div className="flex flex-col max-w-[300px] mx-auto mt-4">
+                            <TextType
+                                text={["Rolyne and Michael"]}
+                                showCursor={false}
+                                startOnVisible={true}
+                                textColors={["#ad8d29"]}
+                                initialDelay={5500}
+                                typingSpeed={30}
+                                className={clsx(mathilda.className, "text-4xl text-center tracking-tighter text-primary text-shadow-[0px_0px_black] mt-4")}
+                            />
+                        </div>
+                    </div>
+                    <div className="bg-white w-full h-full">
                         <div className="absolute w-full h-full">
                             <img src={bookpage.src} className="w-full h-full opacity-20" />
                         </div>
